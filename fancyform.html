@@ -9,8 +9,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin - Login</title>
-
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -18,20 +16,17 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin.css" rel="stylesheet">
-
-    <!-- Main CSS styelsheet -->
-  <link rel="stylesheet" href="screen.css">
+    <link href="screen.css" rel="stylesheet">
 
   </head>
 
   <body class="bg-dark">
-
     <div class="container">
       <div class="card card-login mx-auto mt-5">
-        <div class="card-header">placeholder</div>
+        <div class="card-header">Login</div>
+
         <div class="card-body">
-          <form action="/hook/" method="post">{% csrf_token %}
+          <form action="/hook/" method="post">
             <div class="form-group">
 <!-- causes form to not submit --> <div class="form-label-group">
                 <input type="text" name="endpoint" id="endpoint" class="form-control" placeholder="Email address" required="required" autofocus="autofocus">
@@ -41,7 +36,7 @@
             <div class="form-group">
               <div class="form-label-group">
                 <input name="envname" type="text" id="envName" class="form-control" placeholder="Password" required="required">
-                <label for="inputPassword">Envname</label>
+                <label for="inputPassword">Environment Name</label>
               </div>
             </div>
             <div class="form-group">
