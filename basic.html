@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <form action="#" method="POST">{% csrf_token %}
+      <label for="url">URL</label>
+      <input name='endpoint' type="text" id="url" placeholder="https://www.endpoint.com">
+      <label for="Input">Name </label>  
+      <input name='envname' type="text" id="envname" placeholder="appname">
+      <button type="submit">Create hook!</button>
+    </form>
+<h5>{{parameters}}</h5>
+  </body>
+</html>
